@@ -1,0 +1,3 @@
+Model,Flows,Reflex only (%),"Naive LLM, greedy (%)","Self-consistency, majority vote (%)",Self-consistency + fallback when agreement < 1.0 (%),Mean agreement,Tokens per flow,Latency per flow (s)
+large,routed test flows (n=600),56.5,64.3,65.7,63.8,0.887,342.0,3.71
+xlarge,routed test flows (n=600),56.5,71.3,71.2,71.3,0.928,442.1,7.46

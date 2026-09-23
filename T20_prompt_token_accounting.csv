@@ -1,0 +1,5 @@
+Model,Prompt tokens,"Generated, naive","Generated, EGCB",Saving on generated tokens (%),Saving on all tokens (%)
+small,1148.3,144.4,8.0,94.5,10.5
+medium,1148.3,138.8,8.0,94.2,10.2
+large,1148.3,68.9,8.0,88.4,5.0
+xlarge,1148.3,89.0,8.0,91.0,6.5

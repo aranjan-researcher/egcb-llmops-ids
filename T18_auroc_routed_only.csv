@@ -1,0 +1,13 @@
+Model,Flows,Answered,Wrong,AUROC early entropy
+small,routed,133,94,0.233
+small,stress,205,124,0.705
+small,all,338,218,0.525
+medium,routed,593,249,0.552
+medium,stress,576,171,0.441
+medium,all,1169,420,0.505
+large,routed,600,214,0.539
+large,stress,600,103,0.57
+large,all,1200,317,0.551
+xlarge,routed,600,172,0.535
+xlarge,stress,598,59,0.611
+xlarge,all,1198,231,0.564

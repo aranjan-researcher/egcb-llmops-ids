@@ -1,0 +1,13 @@
+Model,Agreement threshold,Calibration accuracy (%),Test accuracy (%),Falls back to reflex (%)
+large,0.2,60.9,65.7,0.0
+large,0.4,60.9,65.7,0.0
+large,0.6,60.9,65.7,0.0
+large,0.8,63.6,65.8,16.5
+large,1.0,66.4,63.8,40.2
+large,1.01,67.1,56.5,100.0
+xlarge,0.2,65.8,71.2,0.0
+xlarge,0.4,65.8,71.2,0.0
+xlarge,0.6,65.8,71.2,0.0
+xlarge,0.8,65.8,72.5,10.7
+xlarge,1.0,68.2,71.3,25.3
+xlarge,1.01,67.1,56.5,100.0

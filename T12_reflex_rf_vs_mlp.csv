@@ -1,0 +1,7 @@
+Dataset,Reflex model,Accuracy (%),F1 (%),FNR (%),FPR (%),Routed (%),Routed (n),Accuracy on routed flows (%),Latency per flow (ms),Training time (s)
+CIC-IDS2017,Random Forest,99.76,99.62,0.44,0.15,0.281,248,57.3,5.89,
+CIC-IDS2017,Neural Network (MLP),99.06,98.54,1.23,0.8,1.907,1683,73.4,0.66,88.5
+CICIoT2023,Random Forest,99.66,99.83,0.19,6.48,0.502,301,60.1,5.88,
+CICIoT2023,Neural Network (MLP),99.28,99.63,0.5,9.83,0.897,538,60.8,0.7,24.8
+NSL-KDD,Random Forest,78.68,77.55,35.32,2.83,9.479,2137,51.3,5.88,
+NSL-KDD,Neural Network (MLP),77.64,76.09,37.51,2.33,2.573,580,55.0,0.7,16.3

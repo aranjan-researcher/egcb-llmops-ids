@@ -1,0 +1,5 @@
+Model,Comparison,"LLM right, RF wrong","RF right, LLM wrong",McNemar p
+small,LLM vs Random Forest (routed flows),18,43,0.0019
+medium,LLM vs Random Forest (routed flows),153,144,0.6426
+large,LLM vs Random Forest (routed flows),176,129,0.0083
+xlarge,LLM vs Random Forest (routed flows),185,96,0.0000

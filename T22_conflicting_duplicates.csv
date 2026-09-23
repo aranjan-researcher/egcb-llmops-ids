@@ -1,0 +1,4 @@
+Dataset,Rows (train+test),Feature vectors occurring more than once,... of which rows disagree on the binary label,... appearing in both splits,Evaluated flows with a conflicting twin
+CIC-IDS2017,294172,24,24,14,2 of 550
+CICIoT2023,253316,7108,0,6448,0 of 550
+NSL-KDD,148517,1439,210,1322,5 of 550

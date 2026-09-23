@@ -1,0 +1,4 @@
+Dataset,Calibration flows,... with a same-label twin in training,Evaluated test flows,... with a same-label training twin,... with an opposite-label training twin,Test split with a same-label training twin (%)
+CIC-IDS2017,150,0,400,0,2,0.0
+CICIoT2023,150,0,400,9,0,5.74
+NSL-KDD,150,0,400,4,0,2.74

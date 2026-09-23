@@ -1,0 +1,9 @@
+Model,Reflex model,"Reflex only, routed flows (%)",Naive LLM with this fallback (%),EGCB (always falls back) (%)
+small,Random Forest,56.5,52.3,56.5
+small,Neural Network (MLP),53.5,48.3,53.5
+medium,Random Forest,56.5,58.0,56.5
+medium,Neural Network (MLP),53.5,58.0,53.5
+large,Random Forest,56.5,64.3,56.5
+large,Neural Network (MLP),53.5,64.3,53.5
+xlarge,Random Forest,56.5,71.3,56.5
+xlarge,Neural Network (MLP),53.5,71.3,53.5
