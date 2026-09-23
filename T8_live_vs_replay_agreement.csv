@@ -1,0 +1,5 @@
+Model,n,Same stop reason (%),Same token count (%),Same answer (%)
+small,1200,100.0,100.0,100.0
+medium,1200,100.0,100.0,100.0
+large,1200,100.0,100.0,100.0
+xlarge,1200,100.0,100.0,100.0

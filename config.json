@@ -1,0 +1,70 @@
+{
+  "QUICK_TEST": false,
+  "SEED": 42,
+  "ZIP_PATHS": {
+    "CIC-IDS2017": "/content/CIC 2017.zip",
+    "CICIoT2023": "/content/CICIoT2023.zip",
+    "NSL-KDD": "/content/KDD.zip"
+  },
+  "DATA_ROOT": "/content/datasets",
+  "MOUNT_DRIVE": true,
+  "RESULTS_DIR": "/content/drive/MyDrive/nsacb_results_retrieval",
+  "CIC_BENIGN_CAP": 200000,
+  "CIC_ATTACK_CLASS_CAP": 20000,
+  "CIC_TEST_SIZE": 0.3,
+  "IOT_TRAIN_ROWS": 200000,
+  "IOT_TEST_ROWS": 60000,
+  "RF_PARAMS": {
+    "n_estimators": 100,
+    "class_weight": "balanced_subsample",
+    "oob_score": true,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "DELTA": 0.2,
+  "DELTA_SWEEP": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45
+  ],
+  "FEATURE_TOP_K": 20,
+  "PROMPT_MODE": "retrieval",
+  "N_REF_PER_CLASS": 2,
+  "REF_POOL_PER_CLASS": 50000,
+  "N_STRESS": 200,
+  "ROUTED_CAP": 200,
+  "N_CALIB": 150,
+  "MODELS": {
+    "small": {
+      "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "params_b": 0.49
+    },
+    "medium": {
+      "hf_id": "Qwen/Qwen2.5-3B-Instruct",
+      "params_b": 3.09
+    },
+    "large": {
+      "hf_id": "Qwen/Qwen2.5-7B-Instruct",
+      "params_b": 7.62
+    },
+    "xlarge": {
+      "hf_id": "Qwen/Qwen2.5-14B-Instruct",
+      "params_b": 14.8
+    }
+  },
+  "FORCE_4BIT": false,
+  "MAX_NEW_TOKENS": 256,
+  "WINDOW": 8,
+  "MIN_TOKENS": 8,
+  "LAMBDA": 0.7,
+  "TAU_FIXED": null,
+  "RUN_LIVE": true,
+  "BOOTSTRAP": 1000,
+  "RANDOM_TRIP_REPEATS": 200
+}

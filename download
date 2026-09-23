@@ -1,0 +1,12 @@
+# datasets are not redistributed - download them from the original sources
+datasets/
+*.zip
+*.csv.gz
+
+# notebook noise
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# local scratch
+.DS_Store

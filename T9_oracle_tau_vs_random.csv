@@ -1,0 +1,41 @@
+Model,Test flows,Policy,tau,n,Accuracy % [95% CI],Breaker trips %,"Random breaker, same trip rate: accuracy %",Gain over random (pts),Mean generated tokens,Mean latency s,Best gain over random at any tau (pts)
+small,routed,Reflex only (RF),-,600,"56.5 [52.3, 60.0]",100.0,-,-,0.0,0.006,0.18
+small,routed,LLM naive (RF if no answer),off,600,"52.3 [48.3, 56.2]",0.0,52.3,0.0,144.4,3.83,0.18
+small,routed,"NS-ACB, tau* from calibration (deployed)",0.7679,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.221,0.18
+small,routed,"ORACLE tau, max accuracy on test",1.8498,600,"56.5 [52.3, 60.0]",95.7,56.3,0.18,21.6,0.579,0.18
+small,routed,"ORACLE tau, min J on test",0.7414,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.22,0.18
+small,all,Reflex only (RF),-,1200,"75.3 [72.8, 77.7]",100.0,-,-,0.0,0.006,0.09
+small,all,LLM naive (RF if no answer),off,1200,"64.2 [61.4, 66.9]",0.0,64.2,0.0,137.1,3.633,0.09
+small,all,"NS-ACB, tau* from calibration (deployed)",0.7679,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.22,0.09
+small,all,"ORACLE tau, max accuracy on test",1.6671,1200,"75.3 [72.8, 77.7]",99.2,75.2,0.09,12.9,0.349,0.09
+small,all,"ORACLE tau, min J on test",0.7501,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.22,0.09
+medium,routed,Reflex only (RF),-,600,"56.5 [52.3, 60.0]",100.0,-,-,0.0,0.006,1.19
+medium,routed,LLM naive (RF if no answer),off,600,"58.0 [54.2, 61.5]",0.0,58.0,0.0,138.8,5.639,1.19
+medium,routed,"NS-ACB, tau* from calibration (deployed)",0.906,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.35,1.19
+medium,routed,"ORACLE tau, max accuracy on test",2.0088,600,"58.5 [54.7, 62.2]",46.2,57.3,1.19,116.5,4.737,1.19
+medium,routed,"ORACLE tau, min J on test",1.0276,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.35,1.19
+medium,all,Reflex only (RF),-,1200,"75.3 [72.8, 77.7]",100.0,-,-,0.0,0.006,1.01
+medium,all,LLM naive (RF if no answer),off,1200,"64.6 [61.8, 67.2]",0.0,64.6,0.0,141.1,5.727,1.01
+medium,all,"NS-ACB, tau* from calibration (deployed)",0.906,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.35,1.01
+medium,all,"ORACLE tau, max accuracy on test",1.5112,1200,"75.3 [72.8, 77.7]",96.5,75.0,0.38,37.0,1.522,1.01
+medium,all,"ORACLE tau, min J on test",0.9898,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.35,1.01
+large,routed,Reflex only (RF),-,600,"56.5 [52.3, 60.0]",100.0,-,-,0.0,0.006,2.73
+large,routed,LLM naive (RF if no answer),off,600,"64.3 [60.2, 68.0]",0.0,64.3,0.0,68.9,2.275,2.73
+large,routed,"NS-ACB, tau* from calibration (deployed)",0.2501,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.322,2.73
+large,routed,"ORACLE tau, max accuracy on test",1.3327,600,"64.8 [60.8, 68.7]",10.2,63.5,1.3,67.1,2.217,2.73
+large,routed,"ORACLE tau, min J on test",0.1973,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.321,2.73
+large,all,Reflex only (RF),-,1200,"75.3 [72.8, 77.7]",100.0,-,-,0.0,0.006,1.51
+large,all,LLM naive (RF if no answer),off,1200,"73.6 [71.3, 76.2]",0.0,73.6,0.0,70.5,2.328,1.51
+large,all,"NS-ACB, tau* from calibration (deployed)",0.2501,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.323,1.51
+large,all,"ORACLE tau, max accuracy on test",0.8631,1200,"76.4 [74.0, 78.7]",78.8,75.0,1.46,37.3,1.264,1.51
+large,all,"ORACLE tau, min J on test",0.1993,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.322,1.51
+xlarge,routed,Reflex only (RF),-,600,"56.5 [52.3, 60.0]",100.0,-,-,0.0,0.006,0.44
+xlarge,routed,LLM naive (RF if no answer),off,600,"71.3 [67.3, 75.0]",0.0,71.3,0.0,89.0,4.964,0.44
+xlarge,routed,"NS-ACB, tau* from calibration (deployed)",0.446,600,"56.5 [52.3, 60.0]",100.0,56.5,0.0,8.0,0.564,0.44
+xlarge,routed,"ORACLE tau, max accuracy on test",off,600,"71.3 [67.3, 75.0]",0.0,71.3,0.0,89.0,4.964,0.44
+xlarge,routed,"ORACLE tau, min J on test",off,600,"71.3 [67.3, 75.0]",0.0,71.3,0.0,89.0,4.964,0.44
+xlarge,all,Reflex only (RF),-,1200,"75.3 [72.8, 77.7]",100.0,-,-,0.0,0.006,0.69
+xlarge,all,LLM naive (RF if no answer),off,1200,"80.8 [78.5, 83.0]",0.0,80.8,0.0,89.7,4.995,0.69
+xlarge,all,"NS-ACB, tau* from calibration (deployed)",0.446,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.566,0.69
+xlarge,all,"ORACLE tau, max accuracy on test",off,1200,"80.8 [78.5, 83.0]",0.0,80.8,0.0,89.7,4.995,0.69
+xlarge,all,"ORACLE tau, min J on test",0.4343,1200,"75.3 [72.8, 77.7]",100.0,75.3,0.0,8.0,0.566,0.69

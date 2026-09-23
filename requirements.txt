@@ -1,0 +1,10 @@
+# Python 3.11+ ; versions used for the results in the paper
+torch>=2.5
+transformers>=4.44,<5
+accelerate>=0.33
+bitsandbytes>=0.43        # only needed to load a model in 4-bit on a smaller GPU
+scikit-learn>=1.5
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+psutil>=5.9

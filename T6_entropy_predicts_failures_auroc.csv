@@ -1,0 +1,49 @@
+Model,Dataset,Failure definition,n,Failures (n),"AUROC mean entropy, first 32 tokens [95% CI]","AUROC mean entropy, full output [95% CI]",Mean early entropy: failures,Mean early entropy: successes
+small,CIC-IDS2017,any_failure (no answer or wrong),400,361,"0.612 [0.511, 0.710]","0.517 [0.452, 0.589]",1.266,1.165
+small,CIC-IDS2017,wrong_answer (answered flows only),105,66,"0.407 [0.290, 0.535]","0.524 [0.398, 0.653]",1.128,1.165
+small,CIC-IDS2017,no_answer (all flows),400,295,"0.715 [0.651, 0.774]","0.519 [0.461, 0.577]",1.297,1.142
+small,CICIoT2023,any_failure (no answer or wrong),400,386,"0.749 [0.669, 0.835]","0.488 [0.318, 0.673]",1.484,1.285
+small,CICIoT2023,wrong_answer (answered flows only),71,57,"0.291 [0.118, 0.492]","0.659 [0.489, 0.823]",1.204,1.285
+small,CICIoT2023,no_answer (all flows),400,329,"0.883 [0.849, 0.912]","0.321 [0.250, 0.389]",1.532,1.22
+small,NSL-KDD,any_failure (no answer or wrong),400,333,"0.673 [0.601, 0.745]","0.662 [0.601, 0.721]",1.164,1.052
+small,NSL-KDD,wrong_answer (answered flows only),162,95,"0.527 [0.436, 0.622]","0.484 [0.397, 0.576]",1.03,1.052
+small,NSL-KDD,no_answer (all flows),400,238,"0.728 [0.677, 0.781]","0.751 [0.701, 0.803]",1.217,1.039
+small,ALL,any_failure (no answer or wrong),1200,1080,"0.715 [0.667, 0.762]","0.484 [0.446, 0.524]",1.312,1.116
+small,ALL,wrong_answer (answered flows only),338,218,"0.525 [0.454, 0.594]","0.510 [0.448, 0.577]",1.105,1.116
+small,ALL,no_answer (all flows),1200,862,"0.774 [0.747, 0.801]","0.481 [0.450, 0.514]",1.364,1.109
+medium,CIC-IDS2017,any_failure (no answer or wrong),400,128,"0.567 [0.502, 0.626]","0.431 [0.375, 0.488]",0.96,0.915
+medium,CIC-IDS2017,wrong_answer (answered flows only),391,119,"0.586 [0.521, 0.650]","0.457 [0.397, 0.517]",0.971,0.915
+medium,CIC-IDS2017,no_answer (all flows),400,9,"0.302 [0.143, 0.460]","0.089 [0.048, 0.135]",0.81,0.932
+medium,CICIoT2023,any_failure (no answer or wrong),400,187,"0.442 [0.390, 0.498]","0.555 [0.499, 0.612]",0.865,0.901
+medium,CICIoT2023,wrong_answer (answered flows only),394,181,"0.443 [0.385, 0.499]","0.570 [0.513, 0.632]",0.866,0.901
+medium,CICIoT2023,no_answer (all flows),400,6,"0.442 [0.079, 0.793]","0.080 [0.000, 0.244]",0.832,0.885
+medium,NSL-KDD,any_failure (no answer or wrong),400,136,"0.540 [0.476, 0.596]","0.390 [0.327, 0.458]",1.004,0.987
+medium,NSL-KDD,wrong_answer (answered flows only),384,120,"0.562 [0.504, 0.625]","0.436 [0.373, 0.503]",1.021,0.987
+medium,NSL-KDD,no_answer (all flows),400,16,"0.359 [0.189, 0.524]","0.072 [0.037, 0.119]",0.877,0.997
+medium,ALL,any_failure (no answer or wrong),1200,451,"0.496 [0.461, 0.533]","0.462 [0.428, 0.497]",0.934,0.936
+medium,ALL,wrong_answer (answered flows only),1169,420,"0.505 [0.467, 0.542]","0.490 [0.457, 0.523]",0.94,0.936
+medium,ALL,no_answer (all flows),1200,31,"0.377 [0.261, 0.496]","0.085 [0.053, 0.123]",0.849,0.938
+large,CIC-IDS2017,any_failure (no answer or wrong),400,64,"0.567 [0.481, 0.647]","0.623 [0.537, 0.702]",0.558,0.515
+large,CIC-IDS2017,wrong_answer (answered flows only),400,64,"0.567 [0.481, 0.647]","0.623 [0.537, 0.702]",0.558,0.515
+large,CIC-IDS2017,no_answer (all flows),400,0,n/a (only one outcome),n/a (only one outcome),,0.522
+large,CICIoT2023,any_failure (no answer or wrong),400,170,"0.530 [0.472, 0.587]","0.575 [0.519, 0.630]",0.543,0.534
+large,CICIoT2023,wrong_answer (answered flows only),400,170,"0.530 [0.472, 0.587]","0.575 [0.519, 0.630]",0.543,0.534
+large,CICIoT2023,no_answer (all flows),400,0,n/a (only one outcome),n/a (only one outcome),,0.538
+large,NSL-KDD,any_failure (no answer or wrong),400,83,"0.493 [0.431, 0.559]","0.619 [0.552, 0.687]",0.469,0.474
+large,NSL-KDD,wrong_answer (answered flows only),400,83,"0.493 [0.431, 0.559]","0.619 [0.552, 0.687]",0.469,0.474
+large,NSL-KDD,no_answer (all flows),400,0,n/a (only one outcome),n/a (only one outcome),,0.473
+large,ALL,any_failure (no answer or wrong),1200,317,"0.551 [0.516, 0.585]","0.628 [0.595, 0.660]",0.527,0.505
+large,ALL,wrong_answer (answered flows only),1200,317,"0.551 [0.516, 0.585]","0.628 [0.595, 0.660]",0.527,0.505
+large,ALL,no_answer (all flows),1200,0,n/a (only one outcome),n/a (only one outcome),,0.511
+xlarge,CIC-IDS2017,any_failure (no answer or wrong),400,44,"0.382 [0.292, 0.483]","0.330 [0.252, 0.412]",0.638,0.681
+xlarge,CIC-IDS2017,wrong_answer (answered flows only),398,42,"0.375 [0.280, 0.483]","0.346 [0.262, 0.434]",0.636,0.681
+xlarge,CIC-IDS2017,no_answer (all flows),400,2,"0.550 [0.384, 0.719]","0.000 [0.000, 0.000]",0.689,0.677
+xlarge,CICIoT2023,any_failure (no answer or wrong),400,124,"0.569 [0.501, 0.631]","0.623 [0.565, 0.675]",0.784,0.751
+xlarge,CICIoT2023,wrong_answer (answered flows only),400,124,"0.569 [0.501, 0.631]","0.623 [0.565, 0.675]",0.784,0.751
+xlarge,CICIoT2023,no_answer (all flows),400,0,n/a (only one outcome),n/a (only one outcome),,0.761
+xlarge,NSL-KDD,any_failure (no answer or wrong),400,65,"0.587 [0.508, 0.663]","0.634 [0.555, 0.709]",0.713,0.663
+xlarge,NSL-KDD,wrong_answer (answered flows only),400,65,"0.587 [0.508, 0.663]","0.634 [0.555, 0.709]",0.713,0.663
+xlarge,NSL-KDD,no_answer (all flows),400,0,n/a (only one outcome),n/a (only one outcome),,0.671
+xlarge,ALL,any_failure (no answer or wrong),1200,233,"0.563 [0.517, 0.605]","0.594 [0.549, 0.633]",0.737,0.695
+xlarge,ALL,wrong_answer (answered flows only),1198,231,"0.564 [0.519, 0.611]","0.599 [0.559, 0.642]",0.737,0.695
+xlarge,ALL,no_answer (all flows),1200,2,"0.492 [0.351, 0.630]","0.000 [0.000, 0.000]",0.689,0.703

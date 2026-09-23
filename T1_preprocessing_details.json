@@ -1,0 +1,150 @@
+{
+  "CIC-IDS2017": {
+    "stats": {
+      "raw_rows": 2830743,
+      "clean_unique_rows": 1787970,
+      "kept_rows": 294172,
+      "split": "stratified 70/30 (no official split)",
+      "files": 8,
+      "attack_types": {
+        "BENIGN": 200000,
+        "DoS Hulk": 20000,
+        "PortScan": 20000,
+        "DDoS": 20000,
+        "DoS GoldenEye": 10282,
+        "FTP-Patator": 5931,
+        "DoS slowloris": 5374,
+        "DoS Slowhttptest": 5228,
+        "SSH-Patator": 3219,
+        "Bot": 1948,
+        "Web Attack \ufffd Brute Force": 1470,
+        "Web Attack \ufffd XSS": 652,
+        "Infiltration": 36,
+        "Web Attack \ufffd Sql Injection": 21,
+        "Heartbleed": 11
+      }
+    },
+    "dropped": [
+      [
+        "Bwd PSH Flags",
+        "constant"
+      ],
+      [
+        "Bwd URG Flags",
+        "constant"
+      ],
+      [
+        "SYN Flag Count",
+        "duplicate of Fwd PSH Flags"
+      ],
+      [
+        "CWE Flag Count",
+        "duplicate of Fwd URG Flags"
+      ],
+      [
+        "ECE Flag Count",
+        "duplicate of RST Flag Count"
+      ],
+      [
+        "Avg Fwd Segment Size",
+        "duplicate of Fwd Packet Length Mean"
+      ],
+      [
+        "Avg Bwd Segment Size",
+        "duplicate of Bwd Packet Length Mean"
+      ],
+      [
+        "Fwd Header Length.1",
+        "duplicate of Fwd Header Length"
+      ],
+      [
+        "Fwd Avg Bytes/Bulk",
+        "constant"
+      ],
+      [
+        "Fwd Avg Packets/Bulk",
+        "constant"
+      ],
+      [
+        "Fwd Avg Bulk Rate",
+        "constant"
+      ],
+      [
+        "Bwd Avg Bytes/Bulk",
+        "constant"
+      ],
+      [
+        "Bwd Avg Packets/Bulk",
+        "constant"
+      ],
+      [
+        "Bwd Avg Bulk Rate",
+        "constant"
+      ],
+      [
+        "Subflow Fwd Packets",
+        "duplicate of Total Fwd Packets"
+      ],
+      [
+        "Subflow Fwd Bytes",
+        "duplicate of Total Length of Fwd Packets"
+      ],
+      [
+        "Subflow Bwd Packets",
+        "duplicate of Total Backward Packets"
+      ]
+    ]
+  },
+  "CICIoT2023": {
+    "stats": {
+      "raw_rows": 6668822,
+      "sampled_train": 193316,
+      "sampled_test": 60000,
+      "split": "official train.csv / test.csv (random subsample)",
+      "files": 2
+    },
+    "dropped": [
+      [
+        "Srate",
+        "duplicate of Rate"
+      ],
+      [
+        "ece_flag_number",
+        "constant"
+      ],
+      [
+        "cwr_flag_number",
+        "constant"
+      ],
+      [
+        "Telnet",
+        "constant"
+      ],
+      [
+        "SMTP",
+        "constant"
+      ],
+      [
+        "IRC",
+        "constant"
+      ],
+      [
+        "LLC",
+        "duplicate of IPv"
+      ]
+    ]
+  },
+  "NSL-KDD": {
+    "stats": {
+      "raw_rows": 148517,
+      "split": "official KDDTrain+ / KDDTest+",
+      "files": 2
+    },
+    "dropped": [
+      [
+        "num_outbound_cmds",
+        "constant"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+title: "Entropy-Guided Circuit Breakers for LLM-Augmented Intrusion Detection"
+message: "If you use this software, please cite the paper."
+type: software
+authors:
+  - family-names: Ranjan
+    given-names: Ashish
+    affiliation: "Indian Institute of Information Technology Sonepat, India"
+  - family-names: Khan
+    given-names: Tayyab
+    affiliation: "Indian Institute of Information Technology Sonepat, India"
+  - family-names: Dohare
+    given-names: Indu
+    affiliation: "MNNIT Prayagraj, India"
+  - family-names: Zakaria
+    given-names: "Mohd Hafiz"
+    affiliation: "Universiti Teknikal Malaysia Melaka, Malaysia"
+  - family-names: Alzahrani
+    given-names: "Sabah M."
+    affiliation: "Taif University, Saudi Arabia"
+  - family-names: Ahmadian
+    given-names: Ali
+    affiliation: "Mediterranea University of Reggio Calabria, Italy; Istanbul Okan University, Turkiye"
+repository-code: "https://github.com/USERNAME/egcb-llmops-ids"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Entropy-Guided Circuit Breakers for LLM-Augmented Intrusion Detection: An Empirical Evaluation of Uncertainty-Routed Cascades in LLMOps"
+  authors:
+    - family-names: Ranjan
+      given-names: Ashish
+    - family-names: Khan
+      given-names: Tayyab
+    - family-names: Dohare
+      given-names: Indu
+    - family-names: Zakaria
+      given-names: "Mohd Hafiz"
+    - family-names: Alzahrani
+      given-names: "Sabah M."
+    - family-names: Ahmadian
+      given-names: Ali
+  year: 2026
+  journal: "under review"

@@ -1,0 +1,4 @@
+Dataset,Split,Train flows,Test flows,Features used,Categorical features,Columns dropped (constant/duplicate),Attack % (train),Attack % (test),Attack types (train)
+CIC-IDS2017,stratified 70/30 (no official split),205920,88252,61,0,17,32.01,32.01,15
+CICIoT2023,official train.csv / test.csv (random subsample),193316,60000,39,0,7,97.6,97.61,34
+NSL-KDD,official KDDTrain+ / KDDTest+,125973,22544,40,3,1,46.54,56.92,23

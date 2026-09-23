@@ -1,0 +1,20 @@
+This copy of the results folder was assembled from the files exported after the main run.
+Before publishing the repository, copy the following from your Drive folder
+(egcb_results_retrieval, previously nsacb_results_retrieval) into the matching folders here:
+
+  tables/T12_reflex_rf_vs_mlp.csv                 (cell 17)
+  tables/T13_cascade_rf_vs_mlp_fallback.csv       (cell 17)
+  tables/T14_self_consistency.csv                 (cell 18)
+  tables/T15_self_consistency_detail.csv          (cell 19)
+  tables/T16_self_consistency_threshold_sweep.csv (cell 19)
+  figures/F_reflex_rf_vs_mlp.png and .pdf         (cell 17)
+
+  llm_runs/*.jsonl    raw per-flow generations (naive and breaker runs)
+  sc_runs/*.jsonl     raw self-consistency samples
+
+The two *_runs folders are the largest files. If they push the repository over
+GitHub's limits, upload them to Zenodo instead and put the DOI in README.md.
+
+Note on file names: the tables produced before the system was renamed use "nsacb"
+in their file names; the notebook in this repository now writes "egcb". Either
+re-run the table cells or rename the files so they match the README.
