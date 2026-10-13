@@ -20,6 +20,8 @@ notebooks/EGCB_experiments.ipynb   One notebook that produces every table and fi
 results/tables/                    All result tables (CSV)
 results/figures/                   All figures (PNG and PDF)
 results/data/eval_set.csv          The exact flows evaluated, with their prompts
+results/llm_runs/                  Raw per-flow generation logs (JSONL)
+results/sc_runs/                   Raw self-consistency samples (JSONL)
 results/config.json                Every parameter of the run
 results/environment.json           Hardware and library versions used
 results/tau_star.json              The calibrated entropy thresholds
@@ -27,7 +29,7 @@ results/experimental_setup.txt     The setup paragraph of the paper, generated f
 requirements.txt                   Python dependencies
 ```
 
-The raw per-flow logs (`llm_runs/` and `sc_runs/`) hold the token entropies, per-token timestamps and generated text for every generation. See "Large files" below for where they are.
+The raw per-flow logs in `results/llm_runs/` and `results/sc_runs/` hold the token entropies, per-token timestamps and generated text for every generation. See "Raw logs" below.
 
 ## Main results
 
@@ -89,9 +91,19 @@ Cells 16, 17 and 19 read the saved logs, so they can be re-run without a GPU.
 
 **Reproducing the threshold studies without a GPU.** Because decoding is greedy, a run with the breaker is exactly a prefix of the run without it. Cell 16 replays the logged generations to compute what any threshold would have done, so the calibration and oracle analyses can be repeated on a laptop once the logs are downloaded.
 
-## Large files
+## Raw logs
 
-`llm_runs/` and `sc_runs/` contain about 9,600 generations with their full entropy traces. If they exceed GitHub's file size limits in your copy, we host them in the archived release: **[Zenodo DOI to be added]**.
+`results/llm_runs/` holds one JSONL file per model and run mode, and `results/sc_runs/` one per model for the self-consistency baseline. Every record carries the per-token entropy trace, the cumulative per-token timestamps, the prompt and generated token counts, the stop reason and the generated text.
+
+| File | Records | Contents |
+|---|---|---|
+| `llm_runs/{model}__naive.jsonl` | 1,650 each | 1,200 test flows (600 routed, 600 stress) plus the 450 calibration flows, generated without a breaker |
+| `llm_runs/{model}__nsacb.jsonl` | 1,200 each | The same test flows under the live circuit breaker |
+| `sc_runs/{model}__selfconsistency.jsonl` | 1,050 each | Five sampled answers per flow, for the 600 routed test flows and the 450 calibration flows (7B and 14B only) |
+
+All 11,400 records carry the same `run_version` fingerprint, `c67f7c79bc`, which the notebook computes from the prompt template and the run settings; records from any other configuration are ignored on load.
+
+The breaker logs keep the file name `__nsacb.jsonl` from before the system was renamed to EGCB. Nothing reads them by name — cells 16, 17 and 19 read the `__naive` and `__selfconsistency` files — so they are released under the names the run produced.
 
 ## Citation
 
